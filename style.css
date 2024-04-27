@@ -1,0 +1,13 @@
+.active-list-item {
+  border-bottom: 1.5px solid white !important;
+  color: #fff !important;
+}
+
+#nav-bar li:hover {
+  border-bottom: 1.5px solid white;
+  color: #fff;
+}
+
+.toggle-item-icon {
+  transform: rotate(180deg);
+}
