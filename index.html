@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HTML</title>
+  
+   <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+
+<body class="bg-neutral-900 font-[roberto]">
+  
+  <div class="wrapper text-white">
+    <!-- header logo and user icon -->
+    <div class="flex items-center justify-between p-5">
+      <!-- empty div -->
+      <div class="size-8"></div>
+      <h1 class="text-3xl">Google</h1>
+      
+      <button class="size-8 rounded-full bg-indigo-600">B</button>
+    </div>
+    
+    <!-- search bar -->
+    <div class="px-5 mb-4 overflow-hidden">
+      <div class="bg-neutral-700 w-full rounded-full flex items-center gap-3 p-3 text-sm">
+        <span class="material-symbols-outlined text-neutral-400">search</span>
+        <input type="search" class="bg-transparent focus:outline-none w-full appearance-none">
+        
+        <span class="material-symbols-outlined ml-auto">mic</span>
+        <span class="material-symbols-outlined">camera</span>
+      </div>
+    </div>
+    
+    <!-- nav bar -->
+    <div class="px-5 pb-2">
+      <ul id="nav-bar" class="flex items-center gap-2 overflow-scroll w-full text-sm text-neutral-600 [&>*]:min-w-fit [&>*]:px-4 [&>*]:transition-all [&>*]:border-b-[1.5px] [&>*]:border-b-transparent">
+        <li class="active-list-item">All</li>
+        <li>Images</li>
+        <li>Videos</li>
+        <li>News</li>
+        <li>Books</li>
+        <li>Maps</li>
+        <li>Flights</li>
+        <li>Finance</li>
+        
+        <li class="border-x border-x-neutral-600">Search Tools</li>
+        <li>Feedback</li>
+      </ul>
+    </div>
+    
+    
+    <!-- search results-->
+    <div class="grid gap-2">
+      
+      <div class="grid grid-cols-2 gap-4 p-5 bg-neutral-800">
+        <div class="flex gap-3 mb-4 col-span-full">
+          <h3 class="text-2xl">HTML</h3>
+          <span class="material-symbols-outlined ml-auto">more_vert</span>
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdOOdyZPg9elLHTX_HAbhXcLen2nHyeuTT_Cjwxlc&usqp=CAE&s" alt="" class="size-14 rounded-md">
+        </div>
+        
+        <div class="flex items-start gap-3 bg-[#3c2d26] rounded-lg p-4 text-xs text-white/[.75] col-span-full">
+          <p class="">
+                HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser. It defines the content and structure of web content. It is often assisted by technologies such as Cascading Style Sheets and scripting languages such as JavaScript.
+              <a href="" class="text-[#efa88c] font-semibold">Wikipedia</a>
+          </p>
+          <button class="material-symbols-outlined">expand_more</button>
+        </div>
+        
+        <div class="bg-[#3c2d26] p-4 rounded-lg text-xs">
+          <h3 class="font-semibold mb-2">Developed by:</h3>
+          <p>WHATWG; World Wide Web Consortium (W3C; formally)</p>
+        </div>
+        <div class="flex flex-col bg-[#3c2d26] p-4 rounded-lg text-xs">
+          <h3 class="font-semibold">Initial release</h3>
+          <p class="mt-auto">1993; 31 years ago</p>
+        </div>
+      </div>
+      
+      <div class="bg-neutral-800 p-5">
+        <h1 class="font-semibold mb-5">About</h1>
+        
+        <p class="text-sm">Latest release: <a href="" class="text-blue-500">Living Standard</a></p>
+      </div>
+      
+      <div class="bg-neutral-800 p-5">
+        <h3 class="flex font-semibold mb-5">People also asked
+          <span class="material-symbols-outlined ml-auto text-lg">more_vert</span>
+        </h3>
+        
+        <div class="space-y-2 divide-y">
+          <div class="accordian-item p-3">
+            <div class="flex items-center">
+              What is HTML used for?
+              <button class="item-btn material-symbols-outlined size-8 bg-neutral-700 text-neutral-400 rounded-full ml-auto transition-all">expand_more</button>
+            </div>
+            
+            <p class="text">This is example text.</p>
+          </div>
+          <div class="accordian-item p-3">
+            <div class="flex items-center">
+              What is HTML used for?
+              <button class="item-btn material-symbols-outlined size-8 bg-neutral-700 text-neutral-400 rounded-full ml-auto transition-all">expand_more</button>
+            </div>
+          
+            <p class="text">This is example text.</p>
+          </div>
+          <div class="accordian-item p-3">
+            <div class="flex items-center">
+              What is HTML used for?
+              <button class="item-btn material-symbols-outlined size-8 bg-neutral-700 text-neutral-400 rounded-full ml-auto transition-all">expand_more</button>
+            </div>
+            
+            <p class="text">This is example text.</p>
+          </div>
+          <div class="accordian-item p-3">
+            <div class="flex items-center">
+              What is HTML used for?
+              <button class="item-btn material-symbols-outlined size-8 bg-neutral-700 text-neutral-400 rounded-full ml-auto transition-all">expand_more</button>
+            </div>
+          
+            <p class="text">This is example text.</p>
+          </div>
+          <div class="accordian-item p-3">
+            <div class="flex items-center">
+              What is HTML used for?
+              <button class="item-btn material-symbols-outlined size-8 bg-neutral-700 text-neutral-400 rounded-full ml-auto transition-all">expand_more</button>
+            </div>
+          
+            <p class="text">This is example text.</p>
+          </div>
+        </div>
+        
+      </div>
+      
+    </div>
+  </div>
+  
+  <script src="main.js"></script>
+</body>
+</html>
